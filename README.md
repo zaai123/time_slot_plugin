@@ -34,6 +34,8 @@ Plugin to get time slots as list in from start time to close time
 
 ```
 
+![alt text](https://raw.githubusercontent.com/zaai123/time_slot_plugin/refs/heads/main/assets/screen_shot.png)
+
 This project is a starting point for a Flutter
 [plug-in package](https://flutter.dev/to/develop-plugins),
 a specialized package that includes platform-specific implementation code for
