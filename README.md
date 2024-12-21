@@ -33,6 +33,10 @@ Plugin to get time slots as list in from start time to close time
   }
 
 ```
+```
+<img src="https://raw.githubusercontent.com/zaai123/time_slot_plugin/refs/heads/main/assets/screen_shot.png" width="200" height="200" />
+```
+
 
 ![alt text](https://raw.githubusercontent.com/zaai123/time_slot_plugin/refs/heads/main/assets/screen_shot.png =200x50)
 
