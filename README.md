@@ -34,6 +34,7 @@ Plugin to get time slots as list in from start time to close time
 
 ```
 
+| ![Image](https://raw.githubusercontent.com/aleksanderwozniak/table_calendar/assets/table_calendar_styles.gif) | ![Image](https://raw.githubusercontent.com/aleksanderwozniak/table_calendar/assets/table_calendar_builders.gif) |
 | ![Image](https://raw.githubusercontent.com/zaai123/time_slot_plugin/refs/heads/main/assets/screen_shot01.png | https://raw.githubusercontent.com/zaai123/time_slot_plugin/refs/heads/main/assets/screen_shot.png) |
 
 This project is a starting point for a Flutter
