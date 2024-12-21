@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +10,4 @@ class MethodChannelTimeSlotPlugin extends TimeSlotPluginPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
   final methodChannel = const MethodChannel('time_slot_plugin');
-
-
-
 }

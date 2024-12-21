@@ -1,3 +1,4 @@
+
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
@@ -26,7 +27,6 @@ class TimeSlotPlugin {
         TimeOfDay addAbleTime =
             TimeOfDay(hour: startTime.hour, minute: startTime.minute);
         timeSlots.add(addAbleTime);
-        log('Time slot: ${addAbleTime.hour}: ${addAbleTime.minute}');
       }
 
       startTime =
@@ -35,7 +35,6 @@ class TimeSlotPlugin {
           TimeOfDay(hour: startTime.hour, minute: startTime.minute);
       if (startTime.isBefore(closeTime) ||
           startTime.isAtSameMomentAs(closeTime)) timeSlots.add(addAbleTime);
-      log('Time slot: ${addAbleTime.hour}: ${addAbleTime.minute}');
     }
     return timeSlots;
   }
@@ -49,7 +48,6 @@ class TimeSlotPlugin {
     DateTime startTime = DateTime(0, 0, 0, start.hour, start.minute);
     DateTime closeTime = DateTime(0, 0, 0, close.hour, close.minute);
     if (startTime.isAfter(closeTime)) {
-      log('Start time is > than close time');
       return timeSlots;
     }
     while (startTime.isBefore(closeTime)) {
@@ -58,7 +56,6 @@ class TimeSlotPlugin {
             TimeOfDay(hour: startTime.hour, minute: startTime.minute);
         timeSlots.add(
             TimeSlot(isSelected: false, isBreakTime: false, time: addAbleTime));
-        log('Time slot: ${addAbleTime.hour}: ${addAbleTime.minute}');
       }
 
       startTime =
@@ -70,7 +67,6 @@ class TimeSlotPlugin {
         timeSlots.add(
             TimeSlot(isSelected: false, isBreakTime: false, time: addAbleTime));
       }
-      log('Time slot: ${addAbleTime.hour}: ${addAbleTime.minute}');
     }
     return timeSlots;
   }
