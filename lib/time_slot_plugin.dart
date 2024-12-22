@@ -1,4 +1,3 @@
-
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
@@ -74,10 +73,11 @@ class TimeSlotPlugin {
 
 class TimeSlot {
   TimeOfDay? time;
-  bool? isSelected;
-  bool? isBreakTime;
+  bool? isSelected = false;
+  bool? isBreakTime = false;
+  bool? isAvailable = true;
 
-  TimeSlot({this.time, this.isSelected, this.isBreakTime});
+  TimeSlot({this.time, this.isSelected, this.isBreakTime, this.isAvailable});
 
   @override
   bool operator ==(Object other) =>
