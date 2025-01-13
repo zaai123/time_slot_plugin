@@ -76,8 +76,14 @@ class TimeSlot {
   bool? isSelected = false;
   bool? isBreakTime = false;
   bool? isAvailable = true;
+  bool? canSelect = true;
 
-  TimeSlot({this.time, this.isSelected, this.isBreakTime, this.isAvailable});
+  TimeSlot(
+      {this.time,
+      this.isSelected,
+      this.isBreakTime,
+      this.isAvailable,
+      this.canSelect});
 
   @override
   bool operator ==(Object other) =>
@@ -86,7 +92,8 @@ class TimeSlot {
           runtimeType == other.runtimeType &&
           time == other.time &&
           isSelected == other.isSelected &&
-          isBreakTime == other.isBreakTime;
+          isBreakTime == other.isBreakTime &&
+          canSelect == other.canSelect;
 
   @override
   int get hashCode =>
