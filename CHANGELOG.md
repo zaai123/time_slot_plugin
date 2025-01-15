@@ -8,3 +8,6 @@
 
 ## 0.0.3
 * New parameter added
+
+## 0.0.3
+* Web bugs fixed

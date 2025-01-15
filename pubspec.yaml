@@ -1,6 +1,6 @@
 name: time_slot_plugin
 description: "Time slot plugin"
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/zaai123/time_slot_plugin
 
 environment:
