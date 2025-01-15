@@ -4,7 +4,6 @@
 // ignore: avoid_web_libraries_in_flutter
 
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
-import 'package:web/web.dart' as web;
 
 import 'time_slot_plugin_platform_interface.dart';
 
@@ -20,7 +19,7 @@ class TimeSlotPluginWeb extends TimeSlotPluginPlatform {
   /// Returns a [String] containing the version of the platform.
   @override
   Future<String?> getPlatformVersion() async {
-    final version = web.window.navigator.userAgent;
-    return version;
+    //final version = web.window.navigator.userAgent;
+    return 'not_found';
   }
 }
